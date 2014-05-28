@@ -6,19 +6,25 @@ nmap <INS> :wq<CR>
 imap <DEL> <ESC>:q!<CR>
 nmap <DEL> :q!<CR>
 
-" Press F12 to write
-imap <F12> <ESC>:w<CR>
-nmap <F12> :w<CR>
+" Press F11 F12 to jump
+nmap <F11> <C-]>
+nmap <F12> <C-t>
 
-" Press F11 to move to next tab
-map <F11> <C-TAB> 
-map <F10> <C-S-TAB>
+" Press F10 to write
+imap <F10> <ESC>:w<CR>
+nmap <F10> :w<CR>"
 
 imap <F9> <ESC>:wq<CR>
 nmap <F9> :wq<CR>
 
 imap <F8> <ESC>:q!<CR>
 nmap <F8> :q!<CR>
+
+" Press F6 F7 to move to next tab
+map <F6> <C-TAB>
+map <F7> <C-S-TAB>
+
+
 " auto complete () {} [] <> '' ""
 inoremap ( ()<ESC>i
 inoremap { {<CR>}<ESC>O
@@ -30,8 +36,7 @@ inoremap " ""<ESC>i
 
 
 "输入webmon 使用NERDTree代开webmon工程
-nnoremap webmon :NERDTree ~/study/code/java/webmon<CR>
-nnoremap NT :NERDTreeToggle<CR>
+nnoremap tree :NERDTreeToggle<CR>
 nnoremap TL :TlistToggle<CR>
 nnoremap MBE :TMiniBufExplorer<CR>
 
