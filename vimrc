@@ -30,6 +30,9 @@ set nu
 set background=light
 set t_Co=256
 
+set autoread
+set autowriteall
+
 let html_no_rendering=1
 "colorscheme molokai
 
