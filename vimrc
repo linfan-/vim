@@ -31,7 +31,7 @@ set background=light
 set t_Co=256
 
 let html_no_rendering=1
-colorscheme molokai
+"colorscheme molokai
 
 "python的自动补全设置
 filetype plugin on
