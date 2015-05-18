@@ -35,7 +35,7 @@ set autoread
 set autowriteall
 
 let html_no_rendering=1
-colorscheme molokai
+"colorscheme molokai
 
 "python的自动补全设置
 filetype plugin on
@@ -45,9 +45,8 @@ autocmd FileType php    set omnifunc=phpcomplete#CompletePHP
 autocmd FileType js set omnifunc=javascriptcomplete#CompleteJS
 "autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+
 "supertab
-"let g:vjde_tab_cfu=1 "tab键也可以自动补全，功能和<c-x><c-u>一样 
-"let g:vjde_tab_cfu=1 "tab键也可以自动补全，功能和<c-x><c-u>一样 
 let g:SuperTabRetainCompletion=2
 let g:SuperTabDefaultCompletion='<C-X><C-O>'
 
@@ -56,8 +55,6 @@ let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
 let Tlist_Use_Right_Window=1
 
-"cscope
-""set cscopequickfix=s-,c-,d-,i-,t-,e-
 
 "minibufexplore
 let g:miniBufExplMapWindowNavVim = 1   
@@ -76,7 +73,8 @@ au BufNewFile *.php 0r ~/.vim/tools/template/template.php
 au BufNewFile *.c 0r ~/.vim/tools/template/template.c
 au BufNewFile *.cpp 0r ~/.vim/tools/template/template.cpp
 au BufNewFile *.go 0r ~/.vim/tools/template/template.go
-
+au BufNewFile,BufRead *.rb set softtabstop=2 | set shiftwidth=2
+au FileType ruby set softtabstop=2 | set shiftwidth=2
 
 
 
