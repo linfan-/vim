@@ -67,11 +67,7 @@ let g:miniBufExplMoreThanOne=0
 
 "FuzzyFinder
 let g:fuf_abbrevMap={
-    \ "data":["~/study/code/java/webmon/data-service/WEB-INF/src/com/ebupt/webmon/dataservice/*/"],
-    \ "box":["~/www/infobox/*/*/"],
-    \ "moav":["~/www/moa/application/views/"],
     \ "moac":["~/www/moa/application/contronllers/"],
-    \ "moam":["~/www/moa/application/models/"],
 \}
 "python程序模板
 au BufNewFile *.py 0r ~/.vim/tools/template/template.py
