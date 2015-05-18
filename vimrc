@@ -1,5 +1,6 @@
 set fileencodings=utf-8,euc-cn,gbk,gbk2312,gb18030,utf-bom,iso8859-1
 set encoding=utf-8
+set guifont=Monaco:h14
 "set guifont=文泉驿等宽微米黑\ 10
 set guioptions-=T "隐藏工具栏
 set guioptions-=m "隐藏菜单项
@@ -74,8 +75,7 @@ au BufNewFile *.py 0r ~/.vim/tools/template/template.py
 au BufNewFile *.php 0r ~/.vim/tools/template/template.php
 au BufNewFile *.c 0r ~/.vim/tools/template/template.c
 au BufNewFile *.cpp 0r ~/.vim/tools/template/template.cpp
-
-
+au BufNewFile *.go 0r ~/.vim/tools/template/template.go
 
 
 
