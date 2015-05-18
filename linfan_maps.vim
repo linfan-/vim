@@ -27,12 +27,13 @@ map <F7> <C-S-TAB>
 
 " auto complete () {} [] <> '' ""
 inoremap ( ()<ESC>i
-inoremap { {<CR>}<ESC>O
 inoremap [ []<ESC>i
 ""inoremap < <><ESC>i
 inoremap << <<<ESC>a
 inoremap ' ''<ESC>i
 inoremap " ""<ESC>i
+au FileType c,cpp inoremap { {<CR>}<ESC>O
+au FileType ruby inoremap { {}<ESC>i
 
 
 "输入webmon 使用NERDTree代开webmon工程
