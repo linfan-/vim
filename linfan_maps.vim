@@ -24,6 +24,11 @@ nmap <F8> :q!<CR>
 map <F6> <C-TAB>
 map <F7> <C-S-TAB>
 
+"For HHKB keyboard need to Press Fn+8 to F8
+nmap 8 :q!<CR>
+nmap 9 :wq<CR>
+nmap 0 :w<CR>"
+
 
 " auto complete () {} [] <> '' ""
 inoremap ( ()<ESC>i
@@ -32,11 +37,10 @@ inoremap [ []<ESC>i
 inoremap << <<<ESC>a
 inoremap ' ''<ESC>i
 inoremap " ""<ESC>i
-au FileType c,cpp inoremap { {<CR>}<ESC>O
+au FileType c,cpp,go,php inoremap { {<CR>}<ESC>O
 au FileType ruby inoremap { {}<ESC>i
 
 
-"输入webmon 使用NERDTree代开webmon工程
 nnoremap tree :NERDTreeToggle<CR>
 nnoremap TL :TlistToggle<CR>
 nnoremap MBE :TMiniBufExplorer<CR>
