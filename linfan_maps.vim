@@ -27,7 +27,7 @@ map <F7> <C-S-TAB>
 "For HHKB keyboard need to Press Fn+8 to F8
 nmap 8 :q!<CR>
 nmap 9 :wq<CR>
-nmap 10 :w<CR>"
+nmap 10 :w<CR>
 
 
 " auto complete () {} [] <> '' ""
@@ -38,7 +38,7 @@ inoremap << <<<ESC>a
 inoremap ' ''<ESC>i
 inoremap " ""<ESC>i
 au FileType c,cpp,go,php inoremap { {<CR>}<ESC>O
-au FileType ruby inoremap { {}<ESC>i
+au FileType ruby,python inoremap { {}<ESC>i
 
 
 nnoremap tree :NERDTreeToggle<CR>
