@@ -11,7 +11,6 @@ set guioptions-=b "隐藏底部滚动条
 set nobackup
 set nowritebackup
 set noswapfile
-set hlsearch
 set textwidth=1000
 
 set tabstop=4
@@ -22,6 +21,7 @@ set showcmd
 set showmatch
 set ignorecase
 
+set laststatus=2
 set ruler
 set autoindent
 set smartindent
